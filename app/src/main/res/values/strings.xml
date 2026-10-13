@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pawn Compiler</string>
+    <string name="subtitle">Pawn source editor · AMX compiler</string>
+    <string name="import_project">Gamemode folder</string>
+    <string name="pick_main">Main .pwn</string>
+    <string name="edit_file">Module</string>
+    <string name="import_includes">Include folder</string>
+    <string name="open_file">Open</string>
+    <string name="save_source">Save</string>
+    <string name="source_label">Source editor</string>
+    <string name="editor_hint">Select a Pawn source file…</string>
+    <string name="compile">Compile .amx</string>
+    <string name="export">AMX file</string>
+    <string name="output_label">Compiler output</string>
+    <string name="compiler_flags_label">Compiler options</string>
+    <string name="reset_flags">Preset</string>
+    <string name="compiler_preset_title">Compiler preset</string>
+    <string name="default_compiler_flags">-d3 -O1 -( -;</string>
+    <string name="source_encoding">Encoding</string>
+    <string name="source_encoding_title">Source file encoding</string>
+    <string name="setup_hint">1. Gamemode folder   2. Includes   3. Main .pwn</string>
+    <string name="view_output">Output</string>
+    <string name="compile_success_title">Compilation successful</string>
+    <string name="compile_failed_title">Compilation failed</string>
+    <string name="close_window">Close</string>
+    <string name="copy_output">Copy output</string>
+    <string name="output_copied">Compiler output copied</string>
+    <string name="amx_location_title">AMX saved at</string>
+    <string name="copy_path">Copy path</string>
+    <string name="path_copied">AMX path copied</string>
+    <string name="discord_label">Discord · sampmobilex</string>
+    <string name="discord_invite_url" translatable="false">https://discord.gg/Uh5s6jFnk</string>
+    <string name="discord_invite_copied">Discord invite copied</string>
+    <string name="support_label">Buy me a coffee</string>
+    <string name="support_message">If Pawn Compiler helps you, you can support its development with a coffee. Thank you!</string>
+    <string name="support_bank">GoTyme Bank</string>
+    <string name="support_account_label">Deposit account</string>
+    <string name="support_account_number" translatable="false">0143 8671 5161</string>
+    <string name="copy_account">Copy account</string>
+    <string name="account_copied">GoTyme account number copied</string>
+</resources>

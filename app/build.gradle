@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.sampmobilex.pawncompiler'
+    compileSdk 35
+
+    ndkVersion "26.2.11394342"
+
+    defaultConfig {
+        externalNativeBuild { cmake { arguments "-DPAWN_COMPILER_VERSION=3.10.11" } }
+        applicationId 'com.sampmobilex.pawncompiler'
+        minSdk 23
+        targetSdk 35
+        versionCode 10
+        versionName "0.8.5-openmp-3.10.11-r5"
+        ndk { abiFilters 'arm64-v8a', 'armeabi-v7a' }
+    }
+    sourceSets {
+        main {
+
+            assets.srcDirs = ['src/main/no-bundled-assets']
+        }
+    }
+    externalNativeBuild {
+        cmake { path file('src/main/cpp/CMakeLists.txt') }
+    }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

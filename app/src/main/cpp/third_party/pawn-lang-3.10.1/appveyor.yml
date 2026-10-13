@@ -1,0 +1,26 @@
+version: '{build}'
+
+configuration:
+  - RelWithDebInfo
+
+before_build:
+  - cmake -G "Visual Studio 10 2010" source/compiler -DCPACK_GENERATOR=ZIP
+
+build_script:
+  - cmake --build . --config %CONFIGURATION%
+  - cmake --build . --config %CONFIGURATION% --target package
+
+artifacts:
+  - path: pawnc-*-windows.zip
+    name: Binary package
+
+deploy:
+  description: '<Put release description here>'
+  provider: GitHub
+  auth_token:
+    secure: ++mk9GhXTpN/hdVjIIi/nHpu0gYpDybMJNDPB3lld8r1UyfoPbz08SVGeSS84HjR
+  artifact: /pawnc-.*-windows\.zip/
+  draft: true
+  prerelease: true
+  on:
+    appveyor_repo_tag: true
